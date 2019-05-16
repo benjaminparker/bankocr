@@ -7,8 +7,14 @@ object Digits {
           DigitRow('|', ' ', '|'),
           DigitRow('|', '_', '|')
         )
+  val One = Digit(
+           DigitRow(' ', ' ', ' '),
+           DigitRow(' ', ' ', '|'),
+           DigitRow(' ', ' ', '|')
+         )
 
   val digits: Map[Digit, String] = Map(
-    Zero -> "0"
+    Zero -> "0",
+    One  -> "1",
   )
 }
